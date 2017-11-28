@@ -38,7 +38,7 @@ const processor = {
     },
 
     serialize: async ( object, options ) => {
-        const encrypted = await this.encryp( object );
+        const encrypted = await this.encrypt( object );
         const processed = extend( true, {}, encrypted );
 
         // TODO: use traverse for better control?
