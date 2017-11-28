@@ -37,7 +37,7 @@ const processor = {
         return decrypted;
     },
 
-    serialize: async ( object, options ) => {
+    serialize: async function( object, options ) {
         const encrypted = await this.encrypt( object );
         const processed = extend( true, {}, encrypted );
 
@@ -54,8 +54,7 @@ const processor = {
         return processed;
     },
 
-    deserialize: async ( processed, options ) => {
-
+    deserialize: async function( processed, options ) {
         const decrypted = await this.decrypt( processed );
         const object = extend( true, {}, decrypted );
 
