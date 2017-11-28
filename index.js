@@ -18,7 +18,7 @@ const processor = {
     },
 
     hash: function( value ) {
-        return crypto.createHash( 'sha256' ).update( value, 'utf8' ).digest( 'base64' );
+        return ( typeof value !== 'undefined' && value !== null ) ? crypto.createHash( 'sha256' ).update( value, 'utf8' ).digest( 'base64' ) : value;
     },
 
     encrypt: function( object ) {

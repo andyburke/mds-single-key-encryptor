@@ -1,6 +1,6 @@
 {
   "name": "mds-single-key-encryptor",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "proof of concept encryption processor",
   "main": "index.js",
   "dependencies": {
