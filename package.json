@@ -1,0 +1,16 @@
+{
+  "name": "mds-single-key-encryptor",
+  "version": "1.0.0",
+  "description": "proof of concept encryption processor",
+  "main": "index.js",
+  "dependencies": {
+    "enveloper": "^2.0.7",
+    "extend": "^3.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT"
+}
